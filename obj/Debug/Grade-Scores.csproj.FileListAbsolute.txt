@@ -1,0 +1,6 @@
+C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\bin\Debug\Grade-Scores.exe
+C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\bin\Debug\Grade-Scores.pdb
+C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\obj\Debug\Grade-Scores.exe
+C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\obj\Debug\Grade-Scores.pdb
+C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\bin\Debug\CommandLine.dll
+C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\bin\Debug\CommandLine.xml

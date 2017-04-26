@@ -1,0 +1,3 @@
+Log written [26/04/2017 4:38:46 PM]
+ERROR: The data line of [FRUNSIS, SMOTH] is incorrect. Please set line to be [FirstName], [LastName], [Score]
+ERROR: The data line of [TIM, 21, BO TIM, 21, BO] is incorrect. Please set line to be [FirstName], [LastName], [Score]
