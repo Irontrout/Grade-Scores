@@ -32,6 +32,9 @@ namespace Grade_Scores
             DebugWrite($"{Environment.NewLine}{input}");
         }
 
+        /// <summary>
+        /// Add an empty line to the log or console
+        /// </summary>
         public static void DebugAddEmptyLine()
         {
             DebugWriteLine(string.Empty);
@@ -51,6 +54,9 @@ namespace Grade_Scores
             Console.Read();
         }
 
+        /// <summary>
+        /// Write the whole log to a file. This should be run on program completion.
+        /// </summary>
         public static void WriteLogToFile()
         {
             // If there is nothing to log, do nothing.

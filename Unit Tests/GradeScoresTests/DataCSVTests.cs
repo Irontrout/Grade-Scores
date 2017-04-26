@@ -49,7 +49,7 @@ namespace GradeScoresTests
         {
             // Act
             data.WriteOutputCSV(studentList);
-            
+
             // Assert
             Assert.That(File.Exists(TestHelpers.OutputFile));
         }

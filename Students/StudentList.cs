@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -11,11 +9,18 @@ namespace Grade_Scores
     {
         private List<Student> Students { get; }
 
+        /// <summary>
+        /// Creates a list of students that can be manipulated
+        /// </summary>
+        /// <param name="inputFile"></param>
         internal StudentList(string inputFile)
         {
             Students = ReadStudentsFromFile(inputFile);
         }
 
+        /// <summary>
+        /// Gets the ordered list of students (How we expect them to be seen on the output file)
+        /// </summary>
         internal List<Student> OrderedStudents
         {
             get
@@ -27,6 +32,11 @@ namespace Grade_Scores
             }
         }
 
+        /// <summary>
+        /// Attempt to read the students from a given input file.
+        /// </summary>
+        /// <param name="inputFile"></param>
+        /// <returns></returns>
         private static List<Student> ReadStudentsFromFile(string inputFile)
         {
             var students = File.ReadAllLines(inputFile)
@@ -37,6 +47,11 @@ namespace Grade_Scores
             return students;
         }
 
+        /// <summary>
+        /// Extract a student from a string (Line from input file)
+        /// </summary>
+        /// <param name="inputLine"></param>
+        /// <returns></returns>
         internal static Student ExtractInformationFromInputAndCreateStudent(string inputLine)
         {
             // Split each segment into seperable parts.
