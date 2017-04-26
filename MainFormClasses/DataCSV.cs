@@ -10,6 +10,25 @@ namespace Grade_Scores
             CSV = GetFile(file);
         }
 
+        internal string CSV { get; }
+
+        internal bool FileExists => File.Exists(CSV);
+
+        private string FileName => Path.GetFileNameWithoutExtension(CSV);
+        
+        private string FileDirectory
+        {
+            get
+            {
+                var path = Path.GetDirectoryName(CSV);
+                return string.IsNullOrEmpty(path) ? Environment.CurrentDirectory : path;
+            }
+        }
+
+        /// <summary>
+        /// Write the output file from the StudentList as a graded text file
+        /// </summary>
+        /// <param name="studentList"></param>
         internal void WriteOutputCSV(StudentList studentList)
         {
             using (StreamWriter output = new StreamWriter($@"{FileDirectory}\{FileName}-Graded.txt"))
@@ -21,22 +40,12 @@ namespace Grade_Scores
             }
         }
 
-        internal string CSV { get; }
-
-        internal bool FileExists => File.Exists(CSV);
-
-        private string FileDirectory
-        {
-            get
-            {
-                var path = Path.GetDirectoryName(CSV);
-                return string.IsNullOrEmpty(path) ? Environment.CurrentDirectory : path;
-            }
-        }
-
-        private string FileName => Path.GetFileNameWithoutExtension(CSV);
-
-        private static string GetFile(string value)
+        /// <summary>
+        /// Find where the file might be by checking relative and actual paths.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        internal static string GetFile(string value)
         {
             // If the file exists as is, then return as is.
             if (File.Exists(value))

@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -18,8 +21,8 @@ namespace Grade_Scores
             get
             {
                 return Students.OrderByDescending(s => s.Score)
-                    .ThenBy(s => s.LastName)
-                    .ThenBy(s => s.FirstName)
+                    .ThenBy(s => s.LastName, StringComparer.InvariantCultureIgnoreCase)
+                    .ThenBy(s => s.FirstName, StringComparer.InvariantCultureIgnoreCase)
                     .ToList();
             }
         }

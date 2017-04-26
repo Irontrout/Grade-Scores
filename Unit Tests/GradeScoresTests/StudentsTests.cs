@@ -1,12 +1,5 @@
-﻿using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Windows.Forms;
 using Grade_Scores;
 using NUnit.Framework;
 
@@ -15,14 +8,6 @@ namespace GradeScoresTests
     [TestFixture]
     public class StudentsTests
     {
-        private string testFile;
-
-        [SetUp]
-        public void SetUp()
-        {
-            testFile = $@"{Environment.CurrentDirectory}\test.txt";
-        }
-        
         [TestCase("Abigail, Aaronson, 20", false)] // Same Score, Earlier both names
         [TestCase("Zander, Zandinson, 20", true)] // Same Score, later both names
         [TestCase("Gary, Aaronson, 20", false)] // Same Score + first name, earlier last name
@@ -38,8 +23,8 @@ namespace GradeScoresTests
             var keyStudent = ExtractStudentFromString("Gary, Garrison, 20");
 
             // Mock an input file with both input and key student
-            MockInputFileFromString(new List<string> {keyStudent.StandardFullLine, inputStudent});
-            var students = new StudentList(testFile);
+            TestHelpers.MockInputFileFromString(new List<string> {keyStudent.StandardFullLine, inputStudent});
+            var students = new StudentList(TestHelpers.TestFile);
 
             // Act / Assert
             // Assert whether the key student should be the first student or not.
@@ -61,21 +46,6 @@ namespace GradeScoresTests
             Assert.AreEqual(string.IsNullOrEmpty(Log.log), logIsEmpty);
         }
 
-        // HELPER CODE //
-
-        private void MockInputFileFromString(List<string> students)
-        {
-            var s = students.Aggregate(string.Empty, (current, student) => current + $"{Environment.NewLine}{student}");
-
-            using (StreamWriter output = new StreamWriter(testFile))
-            {
-                foreach (var student in students)
-                {
-                    output.WriteLine(student);
-                }
-            }
-        }
-
         private Student ExtractStudentFromString(string input)
         {
             return StudentList.ExtractInformationFromInputAndCreateStudent(input);
@@ -84,10 +54,7 @@ namespace GradeScoresTests
         [TearDown]
         public void TearDown()
         {
-            if (File.Exists(testFile))
-            {
-                File.Delete(testFile);
-            }
+            TestHelpers.DeleteTestFiles();
         }
     }
 }

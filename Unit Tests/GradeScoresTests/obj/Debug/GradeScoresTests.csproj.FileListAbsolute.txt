@@ -9,3 +9,14 @@ C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\Unit Tests\G
 C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\Unit Tests\GradeScoresTests\obj\Debug\GradeScoresTests.csprojResolveAssemblyReference.cache
 C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\Unit Tests\GradeScoresTests\obj\Debug\GradeScoresTests.dll
 C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\Unit Tests\GradeScoresTests\obj\Debug\GradeScoresTests.pdb
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\obj\Debug\GradeScoresTests.csprojResolveAssemblyReference.cache
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\obj\Debug\GradeScoresTests.dll
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\obj\Debug\GradeScoresTests.pdb
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\bin\Debug\GradeScoresTests.dll
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\bin\Debug\GradeScoresTests.pdb
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\bin\Debug\Grade-Scores.exe
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\bin\Debug\nunit.framework.dll
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\bin\Debug\CommandLine.dll
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\bin\Debug\Grade-Scores.pdb
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\bin\Debug\nunit.framework.xml
+C:\git\Various Test WinForms\Grade-Scores\GradeScores\Unit Tests\GradeScoresTests\bin\Debug\CommandLine.xml
