@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
 using CommandLine;
+using Grade_Scores.Logging;
+using Grade_Scores.Util;
 
 namespace Grade_Scores
 {
@@ -8,23 +11,41 @@ namespace Grade_Scores
         private static void Main(string[] args)
         {
             var options = new Options();
-            // If no values are input, then close.
-            if (!Parser.Default.ParseArguments(args, options)) Log.DebugWriteLine(options.GetUsage());
+            ILog logger;
 
-            // Set input file and read the students from it.
-            var file = new DataCSV(options.InputFile);
-            if (!file.FileExists)
+            // Initilise the logger.
+            if (Debugger.IsAttached)
             {
-                Log.WriteLogToFile();
-                return;
+                //logger = new DebugLog();
+                logger = new StandardLog(AppDomain.CurrentDomain.BaseDirectory);
             }
-            var students = new StudentList(file.CSV);
-            
-            // Output the file with the students.
-            file.WriteOutputCSV(students);
+            else
+            {
+                logger = new StandardLog(AppDomain.CurrentDomain.BaseDirectory);
+            }
 
-            Log.WriteLogToFile();
-            Log.DebugWaitForInput();
+            // If no values are input, then close.
+            if (!Parser.Default.ParseArguments(args, options))
+            {
+                logger.Write(options.GetUsage());
+                Environment.Exit((int) ExitCode.InvalidArgument);
+            }
+            else
+            {
+                RunMain(options, logger);
+            }
         }
+
+        private static void RunMain(Options options, ILog logger)
+        {
+            // Read the file specified.
+            MainRunner.Run(options.InputFile, logger);
+        }
+    }
+
+    internal enum ExitCode
+    {
+        Successful,
+        InvalidArgument
     }
 }

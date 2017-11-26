@@ -1,9 +1,8 @@
 Aaron, Aaronson, 10
 Daniel, Danielson, 20
 Johnathan, Johannson, 30
-Vlad, The Impala, 40
-Frederick, The Great, 50
+Richard, Richinson, 40
+Timmy, Turner, 50
 AARON, AARONSON, 10
-Hodor, 60
-Alexander, The, Conqueror, 70
+Sean, Bean, 123
 The Girl, Has No Name, 100

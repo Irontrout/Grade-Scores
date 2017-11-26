@@ -1,7 +1,0 @@
-C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\bin\Release\Grade-Scores.exe
-C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\bin\Release\Grade-Scores.pdb
-C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\bin\Release\CommandLine.dll
-C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\bin\Release\CommandLine.xml
-C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\obj\Release\Grade-Scores.exe
-C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\obj\Release\Grade-Scores.pdb
-C:\git\Various Test WinForms\Grade-Scores\Grade-Scores\Grade-Scores\obj\Release\Grade-Scores.csprojResolveAssemblyReference.cache
