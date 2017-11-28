@@ -25,7 +25,7 @@ namespace Grade_Scores
                 logger.Write($"Error accessing scores file.\n{e}", LogCode.ERR);
                 return;
             }
-            catch (StudentParsingException e)
+            catch (StudentParsingException)
             {
                 logger.Write("Error while reading student list. Please check data structure before continuing", LogCode.ERR);
                 return;

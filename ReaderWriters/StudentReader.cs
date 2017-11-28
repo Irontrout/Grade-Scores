@@ -9,13 +9,20 @@ namespace Grade_Scores.ReaderWriters
 {
     public abstract class StudentReader
     {
+        internal StudentReader()
+        {
+        }
+
         protected StudentReader(string readFilePath)
         {
             ReadFilePath = readFilePath;
 
             // Set the write-to file path and clear any previous version of it.
-            WriteFilePath = readFilePath.Remove(readFilePath.LastIndexOf(".", StringComparison.Ordinal)) +
-                            "_Graded.txt";
+            var indexOfPostfix = readFilePath.LastIndexOf(".", StringComparison.Ordinal);
+            WriteFilePath = indexOfPostfix != -1
+                ? readFilePath.Remove(indexOfPostfix) + "_Graded.txt"
+                : readFilePath + "_Graded.txt";
+
             Util.WindowsUtil.ClearFilePath(WriteFilePath, null, false);
 
             Students = new List<IStudent>();

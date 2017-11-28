@@ -1,0 +1,7 @@
+E:\Git\Grade-Scores\bin\Debug\Grade-Scores.exe.config
+E:\Git\Grade-Scores\bin\Debug\Grade-Scores.exe
+E:\Git\Grade-Scores\bin\Debug\Grade-Scores.pdb
+E:\Git\Grade-Scores\bin\Debug\CommandLine.dll
+E:\Git\Grade-Scores\bin\Debug\CommandLine.xml
+E:\Git\Grade-Scores\obj\Debug\Grade-Scores.exe
+E:\Git\Grade-Scores\obj\Debug\Grade-Scores.pdb

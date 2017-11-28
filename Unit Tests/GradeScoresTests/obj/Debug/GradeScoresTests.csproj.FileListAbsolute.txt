@@ -1,0 +1,12 @@
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\obj\Debug\GradeScoresTests.csprojResolveAssemblyReference.cache
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\bin\Debug\GradeScoresTests.dll
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\bin\Debug\GradeScoresTests.pdb
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\bin\Debug\Grade-Scores.exe
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\bin\Debug\nunit.framework.dll
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\bin\Debug\CommandLine.dll
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\bin\Debug\Grade-Scores.pdb
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\bin\Debug\Grade-Scores.exe.config
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\bin\Debug\nunit.framework.xml
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\bin\Debug\CommandLine.xml
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\obj\Debug\GradeScoresTests.dll
+E:\Git\Grade-Scores\Unit Tests\GradeScoresTests\obj\Debug\GradeScoresTests.pdb

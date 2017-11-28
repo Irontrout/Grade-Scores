@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Grade_Scores.Model;
 
 namespace Grade_Scores.ReaderWriters
 {
-    class StandardStudentReader : StudentReader
+    public class StandardStudentReader : StudentReader
     {
+        public StandardStudentReader() : base()
+        {
+        }
+
         public StandardStudentReader(string readFilePath) : base(readFilePath)
         {
         }
